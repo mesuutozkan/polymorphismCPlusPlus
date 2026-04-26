@@ -85,9 +85,9 @@ int main()
 
 	cat1.print();									//use base class method with inheretence
 
-	voiceThreeTimes(animalPtr);						//feat1/polymorphism implementation of function
+	voiceThreeTimes(animalPtr);						//feat1/polymorphismImplementation implementation of function
 
-	voiceThreeTimes(&cat1);							//feat1/polymorphism implementation of function (child class access)
+	voiceThreeTimes(&cat1);							//feat1/polymorphismImplementation implementation of function (child class access)
 
 	dog dog1;										//define a dog object
 
