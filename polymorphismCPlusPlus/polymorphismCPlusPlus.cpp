@@ -59,6 +59,17 @@ public:
 
 };
 
+//good usage of POLYMORPHISM. It allows clean code.
+//below function can be used from any of the child class that having "voice()" virtual method.
+
+static void voiceThreeTimes(animal* animal1)
+{
+	for (int i = 0; i < 3; i++)
+	{
+		animal1->voice();
+	}
+}
+
 int main()
 {
 
@@ -73,6 +84,10 @@ int main()
 	animalPtr->print();								//still uses base class method, where polymorphism can not be implemented
 
 	cat1.print();									//use base class method with inheretence
+
+	voiceThreeTimes(animalPtr);						//feat1/polymorphism implementation of function
+
+	voiceThreeTimes(&cat1);							//feat1/polymorphism implementation of function (child class access)
 
 	dog dog1;										//define a dog object
 
